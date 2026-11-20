@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gamma Gorilla Games</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      min-height: 100vh;
+      font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+      background: radial-gradient(1200px 600px at 10% -10%, #1d3a4a 0%, transparent 50%),
+                  radial-gradient(900px 500px at 100% 0%, #3a1d40 0%, transparent 50%),
+                  #10141c;
+      color: #f4f0ea;
+      padding: 48px 24px 72px;
+    }
+    main { max-width: 920px; margin: 0 auto; }
+    h1 { font-size: 40px; letter-spacing: 0.04em; }
+    .sub { margin: 10px 0 36px; opacity: 0.75; font-size: 16px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+    a.card {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      border-radius: 18px;
+      overflow: hidden;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      transition: transform 0.15s ease, border-color 0.15s ease;
+    }
+    a.card:hover { transform: translateY(-3px); border-color: rgba(255,255,255,0.28); }
+    .preview {
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 28px;
+      letter-spacing: 0.06em;
+    }
+    .sky { background: linear-gradient(180deg, #7fc4e0, #f8d9a6 70%, #e09a62); color: #1d3557; }
+    .nova { background: linear-gradient(180deg, #050712, #0b1230 50%, #1a0a28); color: #eef6ff; }
+    .meta { padding: 18px 20px 22px; }
+    .meta h2 { font-size: 20px; margin-bottom: 6px; }
+    .meta p { opacity: 0.75; font-size: 14px; line-height: 1.45; }
+    footer { margin-top: 40px; opacity: 0.5; font-size: 13px; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Gamma Gorilla Games</h1>
+    <p class="sub">Playable HTML5 samples for a Fiverr mini-game gig. No plugins. Works on desktop and mobile.</p>
+    <div class="grid">
+      <a class="card" href="sky-parcel/">
+        <div class="preview sky">SKY PARCEL</div>
+        <div class="meta">
+          <h2>Sky Parcel</h2>
+          <p>A one-screen platformer-runner. Jump the floating docks, grab letters, and outrun the wind.</p>
+        </div>
+      </a>
+      <a class="card" href="nova-drift/">
+        <div class="preview nova">NOVA DRIFT</div>
+        <div class="meta">
+          <h2>Nova Drift</h2>
+          <p>An arcade dodge-and-shoot. Weave the debris field, crack the rocks, and claim the cores.</p>
+        </div>
+      </a>
+    </div>
+    <footer>Made by Gamma Gorilla Productions</footer>
+  </main>
+</body>
+</html>
